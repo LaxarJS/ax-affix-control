@@ -1,0 +1,20 @@
+{
+   "name": "laxarjs.ax-affix-control",
+   "version": "1.0.0-pre",
+   "description": "A thin AngularJS wrappper around bootstrap-affix, packaged for LaxarJS .",
+   "authors": [],
+   "license": "MIT",
+   "main": "ax-affix-control.js",
+   "moduleType": "amd",
+   "ignore": [
+      ".*",
+      "Gruntfile.js",
+      "node_modules",
+      "bower_components"
+   ],
+   "dependencies": {
+      "bootstrap-sass-official": "3.3.x",
+      "jquery": ">=1.6",
+      "laxar": "^1.0.0-alpha.12"
+   }
+}
