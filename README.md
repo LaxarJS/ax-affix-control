@@ -12,32 +12,33 @@ For general information on installing, styling and optimizing controls, have a l
 Install the control:
 
 ```sh
-bower install laxarjs.ax-affix-control
+bower install laxar-affix-control
 ```
 
-Add RequireJS paths for the dependencies to your `require_config.js`, if you have not already done so:
+Make sure that `bootstrap` and `jquery` can be found by RequireJS.
+For example, assuming that your `baseUrl` is `'bower_components'`, add this to the `paths` section of your `require_config.js`:
 
 ```js
-   paths: [
-      // ...
-      jquery: 'jquery/dist/jquery',
-      'bootstrap-affix': 'bootstrap-sass-official/assets/javascripts/bootstrap/affix'
-   ]
+jquery: 'jquery/dist/jquery',
+'bootstrap': 'bootstrap-sass-official/assets/javascripts/bootstrap'
 ```
 
-It's additionally necessary to specify the correct load order of these artifacts in the `require_config.js` by using a shim entry:
+Additionally, it is necessary to specify the correct load order in the `require_config.js` by adding a `shim` entry:
 
 ```js
-   shim: {
-      // ...
-      'bootstrap-affix': {
-         deps: [ 'jquery' ]
-      }
-   }
+shim: {
+   // ...
+   'bootstrap/affix': [ 'jquery' ]
+}
 ```
 
-Reference the control from the `widget.json` of your widget:
+Now you can reference the control from the `widget.json` of your widget:
  
 ```json
-   "controls": [ "laxarjs.ax-affix-control" ]
+"controls": [ "laxar-affix-control" ]
 ```
+
+
+## Usage
+
+

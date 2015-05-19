@@ -6,7 +6,7 @@
 define( [
    'angular',
    'jquery',
-   'bootstrap-affix'
+   'bootstrap/affix'
 ], function( ng, $ ) {
    'use strict';
 
