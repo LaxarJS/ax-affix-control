@@ -1,6 +1,5 @@
 {
    "name": "ax-affix-control",
-   "description": "A thin AngularJS wrappper around bootstrap-affix, packaged for LaxarJS.",
 
    "integration": {
       "technology": "angular"

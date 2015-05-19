@@ -1,6 +1,6 @@
 # AxAffixControl
 
-A wrapper around the [Bootstrap affix control](http://getbootstrap.com/javascript/#affix) for usage as AngularJS directive in LaxarJS applications.
+> Wraps the [Bootstrap affix component](http://getbootstrap.com/javascript/#affix) as an AngularJS directive, for LaxarJS widgets
 
 ## Installation
 
@@ -9,7 +9,7 @@ For general information on installing, styling and optimizing controls, have a l
 
 ### Setup Using Bower
 
-Install the control:
+Install the control into your LaxarJS application:
 
 ```sh
 bower install laxar-affix-control
@@ -23,7 +23,7 @@ jquery: 'jquery/dist/jquery',
 'bootstrap': 'bootstrap-sass-official/assets/javascripts/bootstrap'
 ```
 
-Additionally, it is necessary to specify the correct load order in the `require_config.js` by adding a `shim` entry:
+Additionally, it is necessary to specify the correct load order by adding a `shim` entry:
 
 ```js
 shim: {
@@ -32,7 +32,7 @@ shim: {
 }
 ```
 
-Now you can reference the control from the `widget.json` of your widget:
+Now you may reference the control from the `widget.json` of your widget:
  
 ```json
 "controls": [ "laxar-affix-control" ]
