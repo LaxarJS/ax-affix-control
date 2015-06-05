@@ -1,6 +1,6 @@
 {
    "name": "laxar-affix-control",
-   "version": "1.0.0-alpha.0",
+   "version": "1.0.0",
    "description": "Wraps the Bootstrap affix component as an AngularJS directive, for LaxarJS widgets.",
    "authors": [],
    "license": "MIT",
